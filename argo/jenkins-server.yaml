@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/jerrysf2009/jenkins-k8s.git
     targetRevision: HEAD
-    path: helm
+    path: helm/charts/jenkins
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
+    namespace: jenkins
