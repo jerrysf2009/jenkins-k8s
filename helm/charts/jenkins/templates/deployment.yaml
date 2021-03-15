@@ -40,12 +40,12 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8080
             initialDelaySeconds: 30
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8080
             initialDelaySeconds: 30
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
