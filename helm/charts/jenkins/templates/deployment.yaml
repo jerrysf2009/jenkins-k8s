@@ -33,6 +33,7 @@ spec:
             claimName: {{ .Values.storage.claimName }}
       securityContext:
         fsGroup: 1000
+        runAsUser: 0
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
