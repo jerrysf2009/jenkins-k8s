@@ -31,6 +31,8 @@ spec:
         - name: jenkins-home
           persistentVolumeClaim:
             claimName: {{ .Values.storage.claimName }}
+      securityContext:
+        fsGroup: 1000
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
