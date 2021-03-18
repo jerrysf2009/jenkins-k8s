@@ -2,7 +2,7 @@
 Host Jenkins in Kubernetes with Helm, Argo CD
 
 
-How to use:
+<h2>How to use:</h2>
 
 1. Configure and install ArgoCD in your K8S Cluster.
    ```
@@ -13,9 +13,13 @@ How to use:
 2. Configure ArgoCD to use this repository with path 
 helm/charts/jenkins.
 
+![alt text](https://github.com/jerrysf2009/jenkins-k8s/blob/main/pic/argocd1.jpg?raw=true)
+
+<h2>How it is looks like:</h2>
+
 ![alt text](https://github.com/jerrysf2009/jenkins-k8s/blob/main/pic/argocd.jpg?raw=true)
 
-Note:
+<h2>Note:</h2>
 
 When using minikube, get the Jenkins server URL using: 
 
