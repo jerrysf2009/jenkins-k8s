@@ -1,5 +1,5 @@
 # jenkins-k8s
-Host Jenkins in Kubernetes with Helm, Argo CD
+Host Jenkins Server in Kubernetes with Helm, Argo CD
 
 
 <h2>How to use:</h2>
