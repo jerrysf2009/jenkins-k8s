@@ -21,10 +21,17 @@ helm/charts/jenkins.
 
 <h2>Note:</h2>
 
-When using minikube, get the Jenkins server URL using: 
+When using minikube:
+
+Get the Jenkins server URL using: 
 
 ```
 minikube service --url jenkins-server -n jenkins
 ```
 
+Enable ingress for minikube:
+
+```
+minikube addons enable ingress
+```
 
