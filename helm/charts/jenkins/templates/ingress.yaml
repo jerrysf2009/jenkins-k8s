@@ -8,9 +8,9 @@ metadata:
 spec:
   rules:
   - host: jenkins.jerryyu.org
-      http:
-        paths:
-        - path: /
-          backend:
-            serviceName: jenkins
-            servicePort: 8080
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: jenkins
+          servicePort: 8080
