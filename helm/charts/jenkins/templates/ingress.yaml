@@ -6,8 +6,6 @@ metadata:
   name: jenkins
   namespace: jenkins
 spec:
-  tls:
-  - secretName: tls
   rules:
   - host: jenkins.jerryyu.org
       http:
