@@ -8,6 +8,11 @@ metadata:
 spec:
   tls:
   - secretName: tls
-  backend:
-    serviceName: jenkins
-    servicePort: 8080
+  rules:
+  - host: jenkins.jerryyu.org
+      http:
+        paths:
+        - path: /
+          backend:
+            serviceName: jenkins
+            servicePort: 8080
