@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.allow-http: "false"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+  name: argocd
+  namespace: argocd
+spec:
+  rules:
+  - host: argocd.jerryyu.org
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: argocd-server
+          servicePort: 443
